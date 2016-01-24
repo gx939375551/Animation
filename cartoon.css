@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*山样式及其位置*/
+
+.mountain {
+    margin-top: 250px;
+    margin-left: 100px;
+}
+
+.m_1 {
+    width: 60px;
+    height: 100px;
+    background-color: #2aeba9;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    float: left;
+    margin-top: 100px;
+    border: 1px solid white;
+}
+
+.m_2 {
+    width: 80px;
+    height: 150px;
+    background-color: #2aeba9;
+    border-top-right-radius: 80%;
+    border-top-left-radius: 80%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    float: left;
+    margin-top: 50px;
+    margin-left: -10px;
+    border: 1px solid white;
+}
+
+.m_3 {
+    width: 100px;
+    height: 200px;
+    background-color: #2aeba9;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    float: left;
+    margin-left: -10px;
+    border: 1px solid white;
+}
+
+
+/*坦克的样式及其位置*/
+
+.tank {
+    clear: both;
+}
+
+
+/*坦克的头定义*/
+
+.t_header {
+    position: absolute;
+    top: 350px;
+    left: 600px;
+}
+
+.t_center {
+    width: 60px;
+    height: 40px;
+    background-color: #000000;
+    float: left;
+}
+
+.t_gun {
+    width: 80px;
+    height: 15px;
+    float: left;
+    background-color: #000000;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    -webkit-transform-origin: left top;
+    -webkit-transform: rotate(15deg);
+    position: relative;
+    left: 10px;
+    top: -5px;
+}
+
+
+/*坦克的身体定义*/
+
+.t_body {
+    clear: both;
+    width: 200px;
+    height: 40px;
+    background-color: #1949b7;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    position: absolute;
+    top: 390px;
+    left: 610px;
+}
+
+
+/*定义坦克的轮子*/
+
+.t_footer {
+    clear: both;
+    position: absolute;
+    top: 415px;
+    left: 630px;
+}
+
+.f_1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50% 50%;
+    background-color: #ef0c37;
+    float: left;
+    margin-right: 25px;
+}
+
+.f_2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50% 50%;
+    background-color: #ef0c37;
+    float: left;
+    margin-right: 25px;
+}
+
+.f_3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50% 50%;
+    background-color: #ef0c37;
+    float: left;
+    margin-right: 25px;
+}
+
+.f_4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50% 50%;
+    background-color: #ef0c37;
+    float: left;
+}
+
+
+/*飞机的样式*/
+
+.airplan {
+    clear: both;
+    position: absolute;
+    top: 80px;
+    left: 690px;
+    -webkit-animation: fadeOutLeftBig 2s infinite linear both;
+}
+
+@-webkit-keyframes fadeOutLeftBig {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(-2000px)
+    }
+}
+
+.air_body {
+    float: left;
+    width: 220px;
+    height: 45px;
+    background-color: #2977ba;
+    border-top-left-radius: 65%;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 50%;
+}
+
+.air_wing_1 {
+    float: left;
+    width: 0px;
+    height: 40px;
+    border: 30px solid;
+    border-top-width: 0px;
+    border-bottom-color: transparent;
+    border-left-color: #177ced;
+    border-right-color: transparent;
+    -webkit-transform-origin: left top;
+    -webkit-transform: rotate(-20deg);
+    margin-left: -120px;
+    margin-top: 30px;
+    border-bottom-left-radius: 30%;
+    border-top-left-radius: 30%;
+}
+
+.air_wing_2 {
+    float: left;
+    width: 0px;
+    height: 15px;
+    border: 30px solid;
+    border-top-width: 0px;
+    border-bottom-color: transparent;
+    border-left-color: #177ced;
+    border-right-color: transparent;
+    -webkit-transform-origin: right top;
+    -webkit-transform: rotate(-175deg);
+    margin-left: -130px;
+    margin-top: 20px;
+}
+
+
+/*飞机的炸弹的样式*/
+
+.bomb {
+    clear: both;
+    position: absolute;
+    top: 150px;
+    left: 720px;
+    -webkit-animation: fadeOutDown 2s infinite ease-in both;
+}
+
+@-webkit-keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(70px)
+    }
+}
+
+.bomb_body {
+    float: left;
+    width: 30px;
+    height: 100px;
+    background-color: #ef220b;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.bomb_wing_1 {
+    float: left;
+    width: 0px;
+    height: 20px;
+    border: 10px solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: red;
+    border-bottom-width: 0px;
+    border-right-color: #ec621e;
+    -webkit-transform-origin: right top;
+    -webkit-transform: rotate(15deg);
+    margin-left: -10px;
+}
+
+.bomb_wing_2 {
+    float: left;
+    width: 0px;
+    height: 20px;
+    border: 10px solid;
+    border-top-color: transparent;
+    border-left-color: #ec621e;
+    border-bottom-color: red;
+    border-bottom-width: 0px;
+    border-right-color: transparent;
+    -webkit-transform-origin: left top;
+    -webkit-transform: rotate(-15deg);
+    margin-left: -50px;
+}
+
+
+/*坦克的炮弹*/
+
+.shell {
+    clear: both;
+    position: absolute;
+    top: 330px;
+    left: 490px;
+    -webkit-animation: bounceOutLeft 2s infinite linear both;
+}
+
+@-webkit-keyframes bounceOutLeft {
+    0% {
+        -webkit-transform: translateX(0)
+    }
+    20% {
+        opacity: 1;
+        -webkit-transform: translateX(-20px)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(-180px)
+    }
+}
+
+.shell_1 {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    float: left;
+}
+
+.shell_2 {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+}
+
+.shell_3 {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
